@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Artwork | CreativeConnect</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #f4f8fc;
+      color: #172b4d;
+    }
+
+    header {
+      background: #102744;
+      color: white;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 26px;
+      font-weight: 700;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 55px auto;
+      padding: 0 20px;
+    }
+
+    .heading {
+      margin-bottom: 30px;
+    }
+
+    .heading h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .heading p {
+      color: #718096;
+      font-size: 15px;
+    }
+
+    .upload-card {
+      background: white;
+      padding: 35px;
+      border-radius: 18px;
+      box-shadow: 0 8px 30px rgba(16, 39, 68, 0.07);
+    }
+
+    .image-box {
+      border: 2px dashed #9bc9ed;
+      background: #f5faff;
+      border-radius: 14px;
+      padding: 30px 20px;
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .image-box p {
+      color: #718096;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    #imagePreview {
+      display: none;
+      max-width: 100%;
+      max-height: 300px;
+      object-fit: contain;
+      border-radius: 10px;
+      margin: 20px auto 0;
+    }
+
+    .form-group {
+      margin-bottom: 22px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 9px;
+      font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #dce5ef;
+      border-radius: 9px;
+      font-family: inherit;
+      font-size: 14px;
+      outline: none;
+      background: white;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: #48a9e8;
+    }
+
+    .form-group textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .publish-btn {
+      width: 100%;
+      padding: 16px;
+      background: #1769a8;
+      color: white;
+      border: none;
+      border-radius: 9px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .publish-btn:hover {
+      background: #102744;
+    }
+
+    .publish-btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    @media (max-width: 600px) {
+      .upload-card {
+        padding: 22px;
+      }
+
+      .heading h1 {
+        font-size: 29px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">CreativeConnect.</div>
+    <a href="artist-dashboard.html">← Back to Dashboard</a>
+  </header>
+
+  <main class="container">
+
+    <div class="heading">
+      <h1>Share Your Creativity</h1>
+      <p>Publish your artwork and let the community discover your talent.</p>
+    </div>
+
+    <div class="upload-card">
+
+      <form id="artworkForm">
+
+        <div class="image-box">
+          <h3>Artwork Image</h3>
+          <p>Paste a publicly accessible image URL below.</p>
+
+          <img id="imagePreview" alt="Artwork preview">
+        </div>
+
+        <div class="form-group">
+          <label for="imageUrl">Artwork Image URL</label>
+          <input
+            type="url"
+            id="imageUrl"
+            placeholder="https://example.com/my-artwork.jpg"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="artworkTitle">Artwork Title</label>
+          <input
+            type="text"
+            id="artworkTitle"
+            placeholder="Enter your artwork title"
+            maxlength="100"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="artworkDescription">Description</label>
+          <textarea
+            id="artworkDescription"
+            placeholder="Tell us about your artwork..."
+            maxlength="1000"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="artworkCategory">Category</label>
+          <select id="artworkCategory" required>
+            <option value="">Select a category</option>
+            <option value="Painting">Painting</option>
+            <option value="Photography">Photography</option>
+            <option value="Digital Art">Digital Art</option>
+            <option value="Sculpture">Sculpture</option>
+            <option value="Craft">Craft</option>
+            <option value="Illustration">Illustration</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <button type="submit" class="publish-btn" id="publishButton">
+          Publish Artwork →
+        </button>
+
+      </form>
+
+    </div>
+  </main>
+
+  <script type="module">
+    import { db } from "./firebase.js";
+
+    import {
+      addDoc,
+      collection,
+      serverTimestamp
+    } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+
+    const form = document.getElementById("artworkForm");
+    const imageUrl = document.getElementById("imageUrl");
+    const imagePreview = document.getElementById("imagePreview");
+    const publishButton = document.getElementById("publishButton");
+
+    // Preview the image from its URL
+    imageUrl.addEventListener("input", function() {
+      const url = this.value.trim();
+
+      if (url) {
+        imagePreview.src = url;
+        imagePreview.style.display = "block";
+      } else {
+        imagePreview.style.display = "none";
+      }
+    });
+
+    imagePreview.addEventListener("error", function() {
+      this.style.display = "none";
+    });
+
+    form.addEventListener("submit", async function(event) {
+      event.preventDefault();
+
+      const title = document.getElementById("artworkTitle").value.trim();
+      const description = document.getElementById("artworkDescription").value.trim();
+      const category = document.getElementById("artworkCategory").value;
+      const url = imageUrl.value.trim();
+
+      let currentUser = {};
+
+      try {
+        currentUser = JSON.parse(
+          localStorage.getItem("ccCurrentUser") || "{}"
+        );
+      } catch (error) {
+        currentUser = {};
+      }
+
+      const artistName = currentUser.fullName || "Creative Artist";
+
+      publishButton.disabled = true;
+      publishButton.textContent = "Publishing...";
+
+      try {
+        await addDoc(collection(db, "artworks"), {
+          title: title,
+          description: description,
+          category: category,
+          imageUrl: url,
+          artistName: artistName,
+          createdAt: serverTimestamp()
+        });
+
+        alert("Artwork published successfully! Everyone can now see it in the Gallery.");
+
+        form.reset();
+        imagePreview.style.display = "none";
+
+      } catch (error) {
+        console.error("Artwork publishing error:", error);
+        alert("Could not publish artwork: " + error.message);
+
+      } finally {
+        publishButton.disabled = false;
+        publishButton.textContent = "Publish Artwork →";
+      }
+    });
+  </script>
+
+</body>
+</html>

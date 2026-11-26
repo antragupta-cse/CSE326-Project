@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Events | CreativeConnect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="cc-events-page">
+
+<header class="cc-events-header">
+  <a href="index.html" class="cc-events-logo">Creative<span>Connect.</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="events.html" class="active">Events</a>
+    <a href="artist-dashboard.html">Dashboard</a>
+    <a href="login.html">Log in</a>
+    <a href="register.html" class="cc-events-join">Join Community</a>
+  </nav>
+</header>
+
+<section class="cc-events-hero">
+  <div>
+    <p class="cc-events-eyebrow">CONNECT · CREATE · CELEBRATE</p>
+    <h1>Where creativity<br><span>brings us together.</span></h1>
+    <p>Discover exhibitions, workshops and creative gatherings. Find your next opportunity to learn, share and connect.</p>
+    <a href="#event-list" class="cc-events-button">Explore Events →</a>
+  </div>
+  <div class="cc-events-hero-image">
+    <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1000" alt="Creative community event">
+  </div>
+</section>
+
+<section class="cc-events-intro">
+  <div>
+    <p class="cc-events-eyebrow">MAKE SOMETHING HAPPEN</p>
+    <h2>Find your creative<br>community.</h2>
+  </div>
+  <p>Meet fellow artists, develop new skills and experience the energy of local creative communities.</p>
+</section>
+
+<section class="cc-events-list" id="event-list">
+  <div class="cc-events-heading">
+    <div>
+      <p class="cc-events-eyebrow">WHAT'S HAPPENING</p>
+      <h2>Upcoming Events</h2>
+    </div>
+    <span>DISCOVER SOMETHING NEW</span>
+  </div>
+
+  <div class="cc-event-filters">
+    <button class="cc-event-filter active" data-filter="all">All Events</button>
+    <button class="cc-event-filter" data-filter="workshop">Workshops</button>
+    <button class="cc-event-filter" data-filter="exhibition">Exhibitions</button>
+    <button class="cc-event-filter" data-filter="community">Community</button>
+  </div>
+
+  <div class="cc-event-grid">
+
+    <article class="cc-event-card" data-category="workshop">
+      <div class="cc-event-image">
+        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800" alt="Art workshop">
+        <span>WORKSHOP</span>
+      </div>
+      <div class="cc-event-content">
+        <p class="cc-event-date">15 DECEMBER 2026</p>
+        <h3>Creative Art Workshop</h3>
+        <p>Explore painting techniques and experiment with colours in a creative learning space.</p>
+        <div class="cc-event-meta">📍 Community Art Studio</div>
+        <button class="cc-event-register">Register Interest →</button>
+      </div>
+    </article>
+
+    <article class="cc-event-card" data-category="exhibition">
+      <div class="cc-event-image">
+        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800" alt="Art exhibition">
+        <span>EXHIBITION</span>
+      </div>
+      <div class="cc-event-content">
+        <p class="cc-event-date">20 DECEMBER 2026</p>
+        <h3>Colours of Imagination</h3>
+        <p>Discover original artwork and creative expressions from emerging artists.</p>
+        <div class="cc-event-meta">📍 City Art Gallery</div>
+        <button class="cc-event-register">Register Interest →</button>
+      </div>
+    </article>
+
+    <article class="cc-event-card" data-category="community">
+      <div class="cc-event-image">
+        <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=800" alt="Creative community gathering">
+        <span>COMMUNITY</span>
+      </div>
+      <div class="cc-event-content">
+        <p class="cc-event-date">27 DECEMBER 2026</p>
+        <h3>Artists Connect Meetup</h3>
+        <p>Meet local creatives, exchange ideas and build meaningful connections.</p>
+        <div class="cc-event-meta">📍 Creative Community Hall</div>
+        <button class="cc-event-register">Register Interest →</button>
+      </div>
+    </article>
+
+    <article class="cc-event-card" data-category="workshop">
+      <div class="cc-event-image">
+        <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800" alt="Creative writing workshop">
+        <span>WORKSHOP</span>
+      </div>
+      <div class="cc-event-content">
+        <p class="cc-event-date">05 JANUARY 2027</p>
+        <h3>Creative Writing Session</h3>
+        <p>Discover storytelling techniques and develop your own creative voice.</p>
+        <div class="cc-event-meta">📍 Learning & Arts Centre</div>
+        <button class="cc-event-register">Register Interest →</button>
+      </div>
+    </article>
+
+    <article class="cc-event-card" data-category="exhibition">
+      <div class="cc-event-image">
+        <img src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?w=800" alt="Modern art exhibition">
+        <span>EXHIBITION</span>
+      </div>
+      <div class="cc-event-content">
+        <p class="cc-event-date">12 JANUARY 2027</p>
+        <h3>Beyond the Canvas</h3>
+        <p>Experience contemporary art and discover inspiring new perspectives.</p>
+        <div class="cc-event-meta">📍 Modern Art Space</div>
+        <button class="cc-event-register">Register Interest →</button>
+      </div>
+    </article>
+
+    <article class="cc-event-card" data-category="community">
+      <div class="cc-event-image">
+        <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800" alt="Community creative gathering">
+        <span>COMMUNITY</span>
+      </div>
+      <div class="cc-event-content">
+        <p class="cc-event-date">18 JANUARY 2027</p>
+        <h3>Creative Community Day</h3>
+        <p>Celebrate creativity through shared experiences, collaboration and conversation.</p>
+        <div class="cc-event-meta">📍 Community Arts Centre</div>
+        <button class="cc-event-register">Register Interest →</button>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section class="cc-events-cta">
+  <p class="cc-events-eyebrow">BE PART OF THE COMMUNITY</p>
+  <h2>Your next creative experience<br>starts here.</h2>
+  <p>Join CreativeConnect and discover opportunities to grow together.</p>
+  <a href="register.html" class="cc-events-button">Join Our Community →</a>
+</section>
+
+<footer class="cc-events-footer">
+  <a href="index.html" class="cc-events-logo">Creative<span>Connect.</span></a>
+  <p>Connecting creativity, inspiring communities.</p>
+  <span>© 2026 CreativeConnect.</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

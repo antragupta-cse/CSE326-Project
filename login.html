@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | CreativeConnect</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="cc-auth-page">
+
+  <header class="cc-header">
+    <nav class="cc-nav">
+      <a href="index.html" class="cc-logo">
+        <span class="cc-logo-icon">C</span>
+        <span>Creative<span class="cc-logo-blue">Connect</span></span>
+      </a>
+
+      <div class="cc-auth-nav-right">
+        <span>New to CreativeConnect?</span>
+        <a href="register.html" class="cc-nav-button">Create account ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="cc-auth-layout">
+
+    <section class="cc-auth-welcome">
+      <div class="cc-auth-welcome-content">
+        <span class="cc-auth-label">WELCOME BACK</span>
+
+        <h1>Your creative<br>world is waiting<br>for <span>you.</span></h1>
+
+        <p>
+          Come back to discover inspiring artists,
+          share ideas and be part of a community
+          that celebrates creativity.
+        </p>
+
+        <div class="cc-auth-art">
+          <img
+            src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=900"
+            alt="Creative painting and art supplies">
+        </div>
+
+        <div class="cc-auth-quote">
+          "Creativity is contagious. Pass it on."
+          <small>— A community of creative minds</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="cc-auth-form-area">
+      <div class="cc-auth-form-card">
+
+        <div class="cc-auth-mobile-logo">
+          <span class="cc-logo-icon">C</span>
+          <strong>CreativeConnect</strong>
+        </div>
+
+        <span class="cc-section-label">YOUR CREATIVE SPACE</span>
+        <h2>Welcome back!</h2>
+        <p class="cc-auth-subtitle">
+          Enter your details to access your account.
+        </p>
+
+        <form id="loginForm">
+
+          <div class="cc-form-group">
+            <label for="loginEmail">Email address</label>
+            <input
+              type="email"
+              id="loginEmail"
+              placeholder="you@example.com"
+              required>
+          </div>
+
+          <div class="cc-form-group">
+            <label for="loginPassword">Password</label>
+            <input
+              type="password"
+              id="loginPassword"
+              placeholder="Enter your password"
+              required>
+          </div>
+
+          <div class="cc-login-options">
+            <label class="cc-remember">
+              <input type="checkbox" id="rememberMe">
+              Remember me
+            </label>
+            <a href="#" id="forgotPassword">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="cc-auth-submit">
+            Log in to your account <span>→</span>
+          </button>
+
+        </form>
+
+        <div class="cc-auth-divider">
+          <span>OR</span>
+        </div>
+
+        <p class="cc-auth-bottom">
+          Don't have an account?
+          <a href="register.html">Join the community</a>
+        </p>
+
+        <a href="index.html" class="cc-back-home">← Back to homepage</a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="cc-auth-footer">
+    © 2026 CreativeConnect · Made for creative minds.
+  </footer>
+  <script type="module" src="login.js"></script>
+</body>
+</html>

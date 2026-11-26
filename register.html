@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join CreativeConnect | Create Account</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="cc-auth-page">
+
+  <header class="cc-header">
+    <nav class="cc-nav">
+      <a href="index.html" class="cc-logo">
+        <span class="cc-logo-icon">C</span>
+        <span>Creative<span class="cc-logo-blue">Connect</span></span>
+      </a>
+
+      <div class="cc-auth-nav-right">
+        <span>Already have an account?</span>
+        <a href="login.html" class="cc-nav-button">Log in ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="cc-auth-layout cc-register-layout">
+
+    <section class="cc-auth-welcome">
+      <div class="cc-auth-welcome-content">
+
+        <span class="cc-auth-label">BECOME PART OF SOMETHING CREATIVE</span>
+
+        <h1>Let's create<br>something <span>amazing.</span></h1>
+
+        <p>
+          Your next creative connection starts here.
+          Meet inspiring people, showcase your talent
+          and discover opportunities in your community.
+        </p>
+
+        <div class="cc-register-image">
+          <img
+            src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?w=900"
+            alt="Creative workspace and artistic inspiration">
+        </div>
+
+        <div class="cc-register-points">
+          <p><span>✓</span> Showcase your creative work</p>
+          <p><span>✓</span> Connect with local communities</p>
+          <p><span>✓</span> Discover creative events</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cc-auth-form-area">
+      <div class="cc-auth-form-card cc-register-form-card">
+
+        <div class="cc-auth-mobile-logo">
+          <span class="cc-logo-icon">C</span>
+          <strong>CreativeConnect</strong>
+        </div>
+
+        <span class="cc-section-label">CREATE YOUR ACCOUNT</span>
+        <h2>Join the community.</h2>
+
+        <p class="cc-auth-subtitle">
+          Fill in your details and start your creative journey.
+        </p>
+
+        <form id="registerForm">
+
+          <div class="cc-form-group">
+            <label for="fullName">Full name</label>
+            <input
+              type="text"
+              id="fullName"
+              placeholder="Enter your full name"
+              required>
+          </div>
+
+          <div class="cc-form-group">
+            <label for="registerEmail">Email address</label>
+            <input
+              type="email"
+              id="registerEmail"
+              placeholder="you@example.com"
+              required>
+          </div>
+
+          <div class="cc-form-group">
+            <label for="registerPassword">Create password</label>
+            <input
+              type="password"
+              id="registerPassword"
+              placeholder="Create a password"
+              minlength="6"
+              required>
+          </div>
+
+          <div class="cc-form-group">
+            <label for="confirmPassword">Confirm password</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              placeholder="Enter password again"
+              minlength="6"
+              required>
+          </div>
+
+          <div class="cc-form-group">
+            <label for="userRole">I want to join as</label>
+            <select id="userRole" required>
+              <option value="">Select your role</option>
+              <option value="artist">Artist / Creator</option>
+              <option value="member">Community Member</option>
+            </select>
+          </div>
+
+          <label class="cc-register-terms">
+            <input type="checkbox" id="agreeTerms" required>
+            <span>I agree to the community terms and conditions.</span>
+          </label>
+
+          <button type="submit" class="cc-auth-submit">
+            Create my account <span>→</span>
+          </button>
+
+        </form>
+
+        <p class="cc-auth-bottom cc-register-bottom">
+          Already part of our community?
+          <a href="login.html">Log in here</a>
+        </p>
+
+        <a href="index.html" class="cc-back-home">← Back to homepage</a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="cc-auth-footer">
+    © 2026 CreativeConnect · Made for creative minds.
+  </footer>
+ <script type="module" src="register.js"></script>
+</body>
+</html>

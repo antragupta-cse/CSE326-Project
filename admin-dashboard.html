@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | CreativeConnect</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="cc-admin-page">
+
+<div class="cc-admin-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="cc-admin-sidebar">
+
+    <a href="index.html" class="cc-admin-logo">
+      Creative<span>Connect.</span>
+    </a>
+
+    <p class="cc-admin-side-label">ADMINISTRATION</p>
+
+    <nav class="cc-admin-nav">
+      <a href="admin-dashboard.html" class="active">▦ Dashboard</a>
+      <a href="#users">♙ Users</a>
+      <a href="#artworks">▧ Artwork Review</a>
+      <a href="#events">◷ Events</a>
+      <a href="index.html">⌂ View Website</a>
+    </nav>
+
+    <div class="cc-admin-sidebar-bottom">
+      <div class="cc-admin-support">
+        <span>✦</span>
+        <h3>CreativeConnect</h3>
+        <p>Building a stronger creative community.</p>
+      </div>
+      <a href="login.html">↗ Log out</a>
+    </div>
+
+  </aside>
+
+  <!-- MAIN -->
+  <main class="cc-admin-main">
+
+    <header class="cc-admin-topbar">
+      <div>
+        <p>Administration / Overview</p>
+      </div>
+
+      <div class="cc-admin-user">
+        <div class="cc-admin-avatar">A</div>
+        <div>
+          <strong>Administrator</strong>
+          <span>Admin Account</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- WELCOME -->
+    <section class="cc-admin-welcome">
+      <div>
+        <p class="cc-admin-eyebrow">CONTROL CENTER</p>
+        <h1>Welcome, <span>Administrator.</span></h1>
+        <p>Manage your community, review creative submissions and keep everything running smoothly.</p>
+      </div>
+      <a href="index.html" class="cc-admin-button">View Website →</a>
+    </section>
+
+    <!-- STATISTICS -->
+    <section class="cc-admin-stats">
+
+      <div class="cc-admin-stat-card">
+        <div class="cc-admin-stat-heading">
+          <span>Total Users</span><b>♙</b>
+        </div>
+        <h2>248</h2>
+        <p>Registered community members</p>
+      </div>
+
+      <div class="cc-admin-stat-card">
+        <div class="cc-admin-stat-heading">
+          <span>Artwork Submissions</span><b>▧</b>
+        </div>
+        <h2>86</h2>
+        <p>Creative works submitted</p>
+      </div>
+
+      <div class="cc-admin-stat-card">
+        <div class="cc-admin-stat-heading">
+          <span>Pending Reviews</span><b>◷</b>
+        </div>
+        <h2 id="pendingCount">3</h2>
+        <p>Submissions awaiting approval</p>
+      </div>
+
+      <div class="cc-admin-stat-card">
+        <div class="cc-admin-stat-heading">
+          <span>Events</span><b>✦</b>
+        </div>
+        <h2>12</h2>
+        <p>Community events listed</p>
+      </div>
+
+    </section>
+
+    <!-- ARTWORK MANAGEMENT -->
+    <section class="cc-admin-section" id="artworks">
+
+      <div class="cc-admin-section-heading">
+        <div>
+          <p class="cc-admin-eyebrow">CONTENT MODERATION</p>
+          <h2>Artwork Submissions</h2>
+          <p>Review creative work submitted by community artists.</p>
+        </div>
+        <span class="cc-admin-review-label">3 Pending</span>
+      </div>
+
+      <div class="cc-admin-table-wrap">
+        <table class="cc-admin-table">
+          <thead>
+            <tr>
+              <th>Artwork</th>
+              <th>Artist</th>
+              <th>Category</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td>
+                <div class="cc-admin-artwork">
+                  <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=150" alt="Abstract artwork">
+                  <strong>Abstract Dreams</strong>
+                </div>
+              </td>
+              <td>Alex Morgan</td>
+              <td>Painting</td>
+              <td><span class="cc-status pending">Pending</span></td>
+              <td class="cc-admin-actions">
+                <button class="cc-approve-btn">Approve</button>
+                <button class="cc-reject-btn">Reject</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="cc-admin-artwork">
+                  <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=150" alt="Landscape photograph">
+                  <strong>Nature's Silence</strong>
+                </div>
+              </td>
+              <td>Jamie Lee</td>
+              <td>Photography</td>
+              <td><span class="cc-status pending">Pending</span></td>
+              <td class="cc-admin-actions">
+                <button class="cc-approve-btn">Approve</button>
+                <button class="cc-reject-btn">Reject</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="cc-admin-artwork">
+                  <img src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?w=150" alt="Digital artwork">
+                  <strong>Beyond Reality</strong>
+                </div>
+              </td>
+              <td>Sam Taylor</td>
+              <td>Digital Art</td>
+              <td><span class="cc-status pending">Pending</span></td>
+              <td class="cc-admin-actions">
+                <button class="cc-approve-btn">Approve</button>
+                <button class="cc-reject-btn">Reject</button>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- USER MANAGEMENT -->
+    <section class="cc-admin-section" id="users">
+
+      <div class="cc-admin-section-heading">
+        <div>
+          <p class="cc-admin-eyebrow">COMMUNITY MANAGEMENT</p>
+          <h2>Recent Members</h2>
+          <p>Some of the latest members in your community.</p>
+        </div>
+      </div>
+
+      <div class="cc-admin-members">
+
+        <div class="cc-admin-member">
+          <div class="cc-member-avatar">J</div>
+          <div><strong>Jordan Smith</strong><span>Artist</span></div>
+          <span class="cc-member-active">Active</span>
+        </div>
+
+        <div class="cc-admin-member">
+          <div class="cc-member-avatar">M</div>
+          <div><strong>Morgan Davis</strong><span>Community Member</span></div>
+          <span class="cc-member-active">Active</span>
+        </div>
+
+        <div class="cc-admin-member">
+          <div class="cc-member-avatar">R</div>
+          <div><strong>Riley Johnson</strong><span>Artist</span></div>
+          <span class="cc-member-active">Active</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EVENTS -->
+    <section class="cc-admin-event-panel" id="events">
+      <div>
+        <p class="cc-admin-eyebrow">COMMUNITY ACTIVITIES</p>
+        <h2>Keep the community inspired.</h2>
+        <p>Explore upcoming events and creative opportunities.</p>
+      </div>
+      <a href="events.html" class="cc-admin-button">Manage Events →</a>
+    </section>
+
+    <footer class="cc-admin-footer">
+      <span>© 2026 CreativeConnect</span>
+      <span>Administrator Workspace</span>
+    </footer>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

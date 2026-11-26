@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Gallery | CreativeConnect</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="cc-gallery-page">
+
+  <!-- NAVIGATION -->
+  <header class="cc-gallery-header">
+    <a href="index.html" class="cc-gallery-logo">
+      Creative<span>Connect.</span>
+    </a>
+
+    <nav class="cc-gallery-nav">
+      <a href="index.html">Home</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="events.html">Events</a>
+      <a href="artist-dashboard.html">Dashboard</a>
+      <a href="login.html">Log in</a>
+      <a href="register.html" class="cc-gallery-join">Join Community</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="cc-gallery-hero">
+    <div class="cc-gallery-hero-content">
+      <p class="cc-gallery-eyebrow">A WORLD OF CREATIVITY</p>
+
+      <h1>Discover art.<br><span>Feel inspired.</span></h1>
+
+      <p>
+        Explore original creations, discover talented local artists,
+        and find inspiration in every corner of our creative community.
+      </p>
+
+      <a href="#artwork-collection" class="cc-gallery-hero-btn">
+        Explore Collection <span>↓</span>
+      </a>
+    </div>
+
+    <div class="cc-gallery-hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=1000"
+        alt="Beautiful art gallery painting"
+      >
+      <div class="cc-gallery-image-caption">
+        <span>CREATIVITY HAS NO LIMITS</span>
+        <span>01 / INSPIRE</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRODUCTION -->
+  <section class="cc-gallery-intro">
+    <div>
+      <p class="cc-gallery-eyebrow">THE CREATIVE COLLECTION</p>
+      <h2>Every artwork tells<br>its own story.</h2>
+    </div>
+
+    <p>
+      From expressive paintings to contemporary photography,
+      discover the imagination and talent of artists in your community.
+    </p>
+  </section>
+
+  <!-- ARTWORK COLLECTION -->
+  <section class="cc-artwork-section" id="artwork-collection">
+
+    <div class="cc-artwork-heading">
+      <div>
+        <p class="cc-gallery-eyebrow">EXPLORE AND DISCOVER</p>
+        <h2>Featured Artwork</h2>
+      </div>
+
+      <span class="cc-artwork-count">06 CREATIVE WORKS</span>
+    </div>
+
+    <!-- CATEGORY FILTERS -->
+    <div class="cc-gallery-filters">
+      <button class="cc-filter-btn active" data-filter="all">All Works</button>
+      <button class="cc-filter-btn" data-filter="painting">Painting</button>
+      <button class="cc-filter-btn" data-filter="digital">Digital Art</button>
+      <button class="cc-filter-btn" data-filter="photography">Photography</button>
+      <button class="cc-filter-btn" data-filter="illustration">Illustration</button>
+    </div>
+
+    <!-- ARTWORK GRID -->
+    <div class="cc-artwork-grid">
+
+      <article class="cc-art-card" data-category="painting">
+        <div class="cc-art-image">
+          <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=800" alt="Colourful abstract painting">
+          <span class="cc-art-category">PAINTING</span>
+          <button class="cc-like-btn" aria-label="Like artwork" aria-pressed="false">♡</button>
+        </div>
+        <div class="cc-art-details">
+          <div>
+            <h3>Colours of Emotion</h3>
+            <p>By Creative Artist</p>
+          </div>
+          <span class="cc-art-like-count">♡ 24</span>
+        </div>
+      </article>
+
+      <article class="cc-art-card" data-category="photography">
+        <div class="cc-art-image">
+          <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800" alt="Beautiful mountain landscape photograph">
+          <span class="cc-art-category">PHOTOGRAPHY</span>
+          <button class="cc-like-btn" aria-label="Like artwork" aria-pressed="false">♡</button>
+        </div>
+        <div class="cc-art-details">
+          <div>
+            <h3>Nature's Silence</h3>
+            <p>By Lens Creator</p>
+          </div>
+          <span class="cc-art-like-count">♡ 38</span>
+        </div>
+      </article>
+
+      <article class="cc-art-card" data-category="digital">
+        <div class="cc-art-image">
+          <img src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?w=800" alt="Abstract digital artwork">
+          <span class="cc-art-category">DIGITAL ART</span>
+          <button class="cc-like-btn" aria-label="Like artwork" aria-pressed="false">♡</button>
+        </div>
+        <div class="cc-art-details">
+          <div>
+            <h3>Beyond Reality</h3>
+            <p>By Digital Creator</p>
+          </div>
+          <span class="cc-art-like-count">♡ 17</span>
+        </div>
+      </article>
+
+      <article class="cc-art-card" data-category="illustration">
+        <div class="cc-art-image">
+          <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800" alt="Artist's colourful creative workspace">
+          <span class="cc-art-category">ILLUSTRATION</span>
+          <button class="cc-like-btn" aria-label="Like artwork" aria-pressed="false">♡</button>
+        </div>
+        <div class="cc-art-details">
+          <div>
+            <h3>Creative Expressions</h3>
+            <p>By Art Explorer</p>
+          </div>
+          <span class="cc-art-like-count">♡ 31</span>
+        </div>
+      </article>
+
+      <article class="cc-art-card" data-category="painting">
+        <div class="cc-art-image">
+          <img src="https://images.unsplash.com/photo-1579783901586-d88db74b4fe4?w=800" alt="Traditional painting artwork">
+          <span class="cc-art-category">PAINTING</span>
+          <button class="cc-like-btn" aria-label="Like artwork" aria-pressed="false">♡</button>
+        </div>
+        <div class="cc-art-details">
+          <div>
+            <h3>Whispers of Colour</h3>
+            <p>By Canvas Artist</p>
+          </div>
+          <span class="cc-art-like-count">♡ 42</span>
+        </div>
+      </article>
+
+      <article class="cc-art-card" data-category="photography">
+        <div class="cc-art-image">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800" alt="Scenic nature photography">
+          <span class="cc-art-category">PHOTOGRAPHY</span>
+          <button class="cc-like-btn" aria-label="Like artwork" aria-pressed="false">♡</button>
+        </div>
+        <div class="cc-art-details">
+          <div>
+            <h3>Moments in Nature</h3>
+            <p>By Visual Storyteller</p>
+          </div>
+          <span class="cc-art-like-count">♡ 29</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="cc-gallery-cta">
+    <p class="cc-gallery-eyebrow">YOUR STORY DESERVES A CANVAS</p>
+    <h2>Have something beautiful<br>to share with the world?</h2>
+    <p>Join our community and let others discover your creativity.</p>
+    <a href="register.html" class="cc-gallery-hero-btn">
+      Become a Creator →
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="cc-gallery-footer">
+    <a href="index.html" class="cc-gallery-logo">
+      Creative<span>Connect.</span>
+    </a>
+    <p>Connecting creativity, inspiring communities.</p>
+    <span>© 2026 CreativeConnect. All rights reserved.</span>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
